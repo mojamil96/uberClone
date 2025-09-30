@@ -70,7 +70,7 @@ const OnBoarding = () => {
       <CustomButton title={ isLastSlied ? "Get Started" : "Next"}
       onPress={() => 
         isLastSlied ? router.replace("/(auth)/sign-up") : 
-        swiperRef.current?.scrollToIndex({index: 1})}
+        swiperRef.current?.scrollToIndex({index: activeIndex + 1})}
         // : swiperRef.current?.scrollToIndex(1);// Use false if you don't want the animation);
       className="w-11/12 mt-10"/>
     </SafeAreaView>

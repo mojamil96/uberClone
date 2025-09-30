@@ -37,7 +37,7 @@ const CustomButton = ({
     title, 
     bgVariant="primary", 
     textVariant="default", 
-    Iconleft, 
+    IconLeft, 
     IconRight, 
     className,
     ...props
@@ -48,7 +48,7 @@ const CustomButton = ({
     shadow-md shadow-neutral-400/70 ${getBgVariantStyle(bgVariant)} ${className}`}
       {...props}
     >
-        {Iconleft && <Iconleft/>}
+        {IconLeft && <IconLeft/>}
         <Text className={`text-lg font-bold ${getTextVariantStyle(textVariant)}`}>{title}</Text>
         {IconRight && <IconRight/>}
     </TouchableOpacity>
